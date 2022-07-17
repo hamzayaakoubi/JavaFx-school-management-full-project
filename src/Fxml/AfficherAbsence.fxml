@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficherAbsenceController">
+   <children>
+      <TableView fx:id="Table" layoutX="282.0" layoutY="113.0" prefHeight="353.0" prefWidth="622.0" style="-fx-border-color: #4997d0;">
+        <columns>
+          <TableColumn fx:id="red_id" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="ref_nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="ref_prenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="ref_matiere" prefWidth="75.0" text="Matiere" />
+            <TableColumn fx:id="ref_date" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="ref_nbabsence" prefWidth="75.0" text="NbAbsence" />
+            <TableColumn fx:id="action" prefWidth="75.0" />
+        </columns>
+      </TableView>
+      <Button layoutX="325.0" layoutY="551.0" mnemonicParsing="false" onAction="#add_absence_btn" prefHeight="57.0" prefWidth="174.0" style="-fx-background-color: #4997d0;" text="Ajouter" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button layoutX="540.0" layoutY="551.0" mnemonicParsing="false" onAction="#update_absence_button" prefHeight="57.0" prefWidth="174.0" style="-fx-background-color: #4997d0;" text="Modifier" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="delete_absence" layoutX="753.0" layoutY="551.0" mnemonicParsing="false" onAction="#delete" prefHeight="57.0" prefWidth="174.0" style="-fx-background-color: #4997d0;" text="Supprimer" textFill="#fffafa">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="mail" layoutX="1018.0" layoutY="323.0" mnemonicParsing="false" onAction="#sendmail" prefHeight="57.0" prefWidth="174.0" style="-fx-background-color: #4997d0;" text="Envoyer mail" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <TextField fx:id="filter" layoutX="422.0" layoutY="46.0" prefHeight="37.0" prefWidth="171.0" promptText="recherche" style="-fx-border-color: #4997d0;" />
+      <Button layoutX="1012.0" layoutY="218.0" mnemonicParsing="false" onAction="#stat" prefHeight="57.0" prefWidth="174.0" style="-fx-background-color: #4997d0;" text="statistique" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="buttonrecherche" layoutX="593.0" layoutY="46.0" mnemonicParsing="false" onAction="#recherche" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #4997d0;" text="recherche" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Label layoutX="45.0" layoutY="46.0" prefHeight="21.0" prefWidth="286.0" text="Gestions Des Absences :" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

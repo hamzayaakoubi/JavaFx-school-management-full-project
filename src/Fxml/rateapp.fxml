@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="mainpane" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RateappController">
+   <children>
+      <Rating fx:id="rating" layoutX="518.0" layoutY="165.0" prefHeight="32.0" prefWidth="244.0" />
+      <JFXButton fx:id="ratebtn" layoutX="497.0" layoutY="342.0" onAction="#rate" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter" textFill="#fcf8f8" />
+      <JFXButton fx:id="statvote" layoutX="499.0" layoutY="479.0" onAction="#statvote" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Statistique" textFill="#fcf8f8" />
+      <Label fx:id="label_rating" layoutX="385.0" layoutY="230.0" prefHeight="32.0" prefWidth="85.0" />
+      <Label layoutX="80.0" layoutY="59.0" prefHeight="32.0" prefWidth="216.0" text="Donner Vos Avis :" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

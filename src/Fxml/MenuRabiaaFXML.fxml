@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuFXMLController12">
+   <children>
+      <Button fx:id="addseance" layoutX="471.0" layoutY="394.0" mnemonicParsing="false" onAction="#addSeance" prefHeight="50.0" prefWidth="220.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter Seance" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="473.0" layoutY="76.0" mnemonicParsing="false" onAction="#addMatiere" prefHeight="50.0" prefWidth="220.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter Matiere" textFill="#fffafa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="473.0" layoutY="175.0" mnemonicParsing="false" onAction="#addSalle" prefHeight="53.0" prefWidth="220.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter Salle" textFill="#f2eeee">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="473.0" layoutY="280.0" mnemonicParsing="false" onAction="#addClasse" prefHeight="50.0" prefWidth="220.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter Classe" textFill="#f5f0f0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="471.0" layoutY="507.0" mnemonicParsing="false" onAction="#listSeance" prefHeight="50.0" prefWidth="220.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Liste Seance" textFill="#fff9f9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

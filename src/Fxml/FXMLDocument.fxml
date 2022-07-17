@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap2" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1500.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLDocumentController">
+   <children>
+      <Pane layoutX="231.0" prefHeight="136.0" prefWidth="1269.0" style="-fx-background-color: #333333;" styleClass="head-background" stylesheets="@style.css" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="369.0" layoutY="53.0" prefHeight="41.0" prefWidth="240.0" text="ISchool " textFill="#a6d66b2b">
+               <font>
+                  <Font name="Georgia Bold Italic" size="50.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="deco" layoutX="926.0" layoutY="82.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#deco" prefHeight="30.0" prefWidth="163.0" ripplerFill="#2c5161" style="-fx-background-color: #FFFFFF;" text="deconnecter" textFill="#434242">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <HBox layoutX="251.0" layoutY="145.0" prefHeight="30.0" prefWidth="810.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="1.0" />
+      <VBox prefHeight="801.0" prefWidth="232.0" style="-fx-background-color: #333333;">
+         <children>
+            <AnchorPane prefHeight="156.0" prefWidth="249.0">
+               <children>
+                  <ImageView fitHeight="111.0" fitWidth="126.0" layoutX="43.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../Images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="etudbtn" onAction="#etudbtn" prefHeight="17.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label alignment="CENTER" text=" Etudiant" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="prnt" onAction="#prnt" prefHeight="11.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Parent" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="657.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="btnEnseig" onAction="#btnEnseig" prefHeight="16.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Enseignant" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="483.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="foyer" onAction="#foyer" prefHeight="14.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Foyer" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="591.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="bel" onAction="#bel" prefHeight="17.0" prefWidth="222.0" style="-fx-background-color: #333333;" text="Button">
+               <graphic>
+                  <Label contentDisplay="RIGHT" style="-fx-background-color: #333333;" text="Reclamation" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="537.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="cantinee" onAction="#gosee" prefHeight="17.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Cantine" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="264.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="eventbtn" onAction="#eventbtn" prefHeight="17.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Evenement" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="645.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="clubbtn" onAction="#clubbtn" prefHeight="14.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Club" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="375.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="emploi" onAction="#emploi" prefHeight="33.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label prefHeight="8.0" prefWidth="130.0" text="Emploi du temps " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="720.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="note" onAction="#note" prefHeight="18.0" prefWidth="220.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <Label text="Notes" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="663.0" prefHeight="10.0" prefWidth="180.0">
+               <VBox.margin>
+                  <Insets left="7.0" right="10.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="absence" onAction="#absence" prefHeight="22.0" prefWidth="231.0" text="Absences" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXButton>
+            <Separator prefHeight="10.0" prefWidth="180.0" />
+            <JFXButton fx:id="finance" onAction="#finance" prefHeight="25.0" prefWidth="232.0" text="Finance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXButton>
+            <Separator prefWidth="200.0" />
+            <JFXButton fx:id="faq" layoutX="20.0" layoutY="368.0" onAction="#faq" prefHeight="21.0" prefWidth="232.0" style="-fx-background-color: #333333;" text="Button">
+               <graphic>
+                  <Label contentDisplay="RIGHT" style="-fx-background-color: #333333;" text="Aide" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <Separator prefWidth="200.0" />
+            <JFXButton layoutX="20.0" layoutY="362.0" onAction="#gorate" prefHeight="22.0" prefWidth="232.0" style="-fx-background-color: #333333;" text="Button">
+               <graphic>
+                  <Label contentDisplay="RIGHT" style="-fx-background-color: #333333;" text="Avis" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="mainpane" layoutX="231.0" layoutY="116.0" prefHeight="639.0" prefWidth="1250.0" AnchorPane.bottomAnchor="26.0" />
+   </children>
+</AnchorPane>

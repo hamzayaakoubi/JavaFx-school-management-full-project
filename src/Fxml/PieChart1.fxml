@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1030.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PieChart1Controller">
+   <children>
+      <PieChart fx:id="piechart" layoutX="178.0" layoutY="114.0" legendSide="RIGHT" prefHeight="319.0" prefWidth="487.0" />
+      <Label layoutX="60.0" layoutY="43.0" text="Statistiques des réclamations par Etat ">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="98.0" layoutY="80.0" prefHeight="2.0" prefWidth="362.0" />
+   </children>
+</Pane>

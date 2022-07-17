@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AffnoteeleveController">
+   <children>
+      <TableView fx:id="TableAff" layoutX="281.0" layoutY="107.0" prefHeight="445.0" prefWidth="585.0">
+        <columns>
+          <TableColumn fx:id="ref_cin" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="ref_nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="ref_prenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="ref_matiere" prefWidth="75.0" text="Matiere" />
+            <TableColumn fx:id="ref_note" prefWidth="75.0" text="Note" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

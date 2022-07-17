@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddMatiereFXMLController">
+   <children>
+      <TextField fx:id="nom" layoutX="162.0" layoutY="270.0" prefHeight="27.0" prefWidth="193.0" />
+      <Text layoutX="39.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="coef" layoutX="162.0" layoutY="351.0" prefHeight="27.0" prefWidth="193.0" />
+      <Label layoutX="44.0" layoutY="338.0" prefHeight="44.0" prefWidth="64.0" text="Coef">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter" layoutX="655.0" layoutY="529.0" mnemonicParsing="false" onAction="#addMatiere" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter " textFill="#f8f8f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="569.0" layoutY="66.0" text="Veuillez Remplir tous les champs" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="modifier" layoutX="436.0" layoutY="529.0" mnemonicParsing="false" onAction="#update" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Modifier " textFill="#eeeaea">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimer" layoutX="875.0" layoutY="529.0" mnemonicParsing="false" onAction="#delete" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Supprimer" textFill="#f8f5f5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="414.0" layoutY="108.0" prefHeight="355.0" prefWidth="643.0">
+         <columns>
+            <TableColumn fx:id="idCele" prefWidth="119.2000732421875" text="id" />
+            <TableColumn fx:id="nomCele" prefWidth="128.800048828125" text="nom" />
+            <TableColumn fx:id="coefCele" prefWidth="171.60003662109375" text="coef" />
+         </columns>
+      </TableView>
+      <TextField fx:id="id" layoutX="162.0" layoutY="197.0" onAction="#getMatireId" prefHeight="30.0" prefWidth="193.0" />
+      <Text layoutX="61.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" wrappingWidth="30.766357421875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

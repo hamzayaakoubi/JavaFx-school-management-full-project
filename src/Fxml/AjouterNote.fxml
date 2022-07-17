@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterNoteController">
+   <children>
+      <Label fx:id="ref_nom" layoutX="410.0" layoutY="218.0" text="Nom">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="ref_prenom" layoutX="398.0" layoutY="285.0" text="Prenom">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="ref_matiere" layoutX="408.0" layoutY="359.0" text="Matiere">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="ref_note" layoutX="410.0" layoutY="437.0" text="Note">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="ref_nom_field" layoutX="518.0" layoutY="215.0" style="-fx-border-color: #4997d0;" />
+      <TextField fx:id="ref_prenom_field" layoutX="518.0" layoutY="282.0" style="-fx-border-color: #4997d0;" />
+      <TextField fx:id="ref_matiere_field" layoutX="518.0" layoutY="356.0" style="-fx-border-color: #4997d0;" />
+      <TextField fx:id="ref_note_field" layoutX="518.0" layoutY="434.0" style="-fx-border-color: #4997d0;" />
+      <Button layoutX="509.0" layoutY="536.0" mnemonicParsing="false" onAction="#add_note_button" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <TextField fx:id="id" layoutX="518.0" layoutY="129.0" prefHeight="0.0" prefWidth="188.0" style="-fx-border-color: #4997d0;" />
+      <Label fx:id="ref_nom1" layoutX="421.0" layoutY="132.0" text="ID">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

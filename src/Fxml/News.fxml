@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewsController">
+   <children>
+      <TableView fx:id="chambreTable" layoutX="340.0" layoutY="278.0" prefHeight="356.0" prefWidth="814.0">
+         <columns>
+            <TableColumn fx:id="idcol" prefWidth="58.0" text="id" />
+            <TableColumn fx:id="stylecol" prefWidth="92.0" text="id_Article" />
+            <TableColumn fx:id="descriptioncol" prefWidth="90.0" text="Nom_Article" />
+            <TableColumn fx:id="numerocol" prefWidth="79.0" text="Contenu" />
+            <TableColumn fx:id="nbpersonnecol" prefWidth="117.0" text="Titre" />
+            <TableColumn fx:id="etatcol" prefWidth="94.0" text="Nb_Vue" />
+            <TableColumn fx:id="imgcol" prefWidth="169.5999755859375" text="Image_Article" />
+            <TableColumn fx:id="reservcol" prefWidth="113.0" text="Date" />
+         </columns>
+      </TableView>
+      <TextField fx:id="id" alignment="CENTER" disable="true" layoutX="87.0" layoutY="262.0" prefHeight="33.0" prefWidth="215.0" promptText="id" />
+      <TextField fx:id="iduser" alignment="CENTER" layoutX="86.0" layoutY="306.0" prefHeight="33.0" prefWidth="215.0" promptText="Id_Article" />
+      <TextField fx:id="nomart" alignment="CENTER" layoutX="86.0" layoutY="347.0" prefHeight="33.0" prefWidth="215.0" promptText="Nom_Article" />
+      <TextField fx:id="titre" alignment="CENTER" layoutX="89.0" layoutY="477.0" prefHeight="33.0" prefWidth="208.0" promptText="Titre" />
+      <TextField fx:id="nbvue" alignment="CENTER" layoutX="89.0" layoutY="523.0" prefHeight="33.0" prefWidth="208.0" promptText="Nombre_Vue" />
+      <TextField fx:id="photo" alignment="TOP_LEFT" layoutX="89.0" layoutY="569.0" prefHeight="33.0" prefWidth="208.0" promptText="Image_Path" />
+      <Label layoutX="120.0" layoutY="1.0" text="News" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgview" fitHeight="150.0" fitWidth="309.0" layoutX="39.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="date" alignment="CENTER" layoutX="89.0" layoutY="616.0" prefHeight="30.0" prefWidth="208.0" promptText="Date " />
+      <TextArea fx:id="contenu" layoutX="84.0" layoutY="393.0" prefHeight="73.0" prefWidth="215.0" promptText="Contenu" />
+   </children>
+</Pane>

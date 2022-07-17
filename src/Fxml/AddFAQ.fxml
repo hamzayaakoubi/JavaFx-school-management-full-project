@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddFAQController">
+   <children>
+      <JFXButton fx:id="add" layoutX="364.0" layoutY="507.0" onAction="#Ajouter" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="question_add" focusColor="ALICEBLUE" layoutX="411.0" layoutY="209.0" prefHeight="90.0" prefWidth="267.0" wrapText="true" />
+      <JFXTextArea fx:id="reponse_add" layoutX="403.0" layoutY="330.0" prefHeight="90.0" prefWidth="267.0" wrapText="true" />
+      <JFXComboBox fx:id="categorieBox" layoutX="403.0" layoutY="168.0" prefHeight="25.0" prefWidth="267.0" />
+      <JFXButton fx:id="Retour" layoutX="634.0" layoutY="505.0" onAction="#Retour" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="296.0" layoutY="172.0" text="Catégorie">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="337.0" text="Réponse">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="243.0" text="Question">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="63.0" text="Ajouter FAQ">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="138.0" layoutY="100.0" prefHeight="3.0" prefWidth="106.0" />
+   </children>
+</Pane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.choixchambreController">
+   <children>
+      <TableView fx:id="chambreTable" layoutX="249.0" layoutY="199.0" prefHeight="306.0" prefWidth="871.0">
+         <columns>
+            <TableColumn fx:id="idcol" prefWidth="58.0" text="id" />
+            <TableColumn fx:id="stylecol" prefWidth="92.0" text="Style" />
+            <TableColumn fx:id="descriptioncol" prefWidth="90.0" text="Description" />
+            <TableColumn fx:id="numerocol" prefWidth="79.0" text="Numero" />
+            <TableColumn fx:id="nbpersonnecol" prefWidth="73.0" text="Nb_Personne" />
+            <TableColumn fx:id="prixcol" prefWidth="86.0" text="Prix" />
+            <TableColumn fx:id="etatcol" prefWidth="94.0" text="Etat" />
+            <TableColumn fx:id="imgcol" prefWidth="169.5999755859375" text="Image de Chambre" />
+            <TableColumn fx:id="reservcol" prefWidth="128.0" text="Disponibilité" />
+         </columns>
+      </TableView>
+      <TextField fx:id="id" alignment="CENTER" layoutX="54.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="id" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <TextField fx:id="style" alignment="CENTER" layoutX="54.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="Style" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <TextField fx:id="description" alignment="CENTER" layoutX="54.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="Description" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <TextField fx:id="numero" alignment="CENTER" layoutX="54.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="Numero" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <TextField fx:id="nbpersonne" alignment="CENTER" layoutX="54.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="Type" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <TextField fx:id="prix" alignment="CENTER" layoutX="46.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="Prix" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <TextField fx:id="etat" alignment="CENTER" layoutX="54.0" layoutY="594.0" prefHeight="33.0" prefWidth="147.0" promptText="Etat" style="-fx-background-color: #F0F8FF;" visible="false" />
+      <Button fx:id="modifier" layoutX="895.0" layoutY="601.0" mnemonicParsing="false" onAction="#ModifVoiture" prefHeight="36.0" prefWidth="104.0" style="-fx-background-color: #495CFF; -fx-background-radius: 50;" text="Modifier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="ajouter" layoutX="895.0" layoutY="601.0" mnemonicParsing="false" onAction="#InsertVoiture" prefHeight="36.0" prefWidth="104.0" style="-fx-background-color: #495CFF; -fx-background-radius: 50;" text="Ajouter" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="reservation" layoutX="903.0" layoutY="601.0" mnemonicParsing="false" onAction="#reservation" prefHeight="36.0" prefWidth="104.0" style="-fx-background-color: #495CFF; -fx-background-radius: 50;" text="Reservation" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimer" layoutX="903.0" layoutY="601.0" mnemonicParsing="false" onAction="#SuppVoiture" prefHeight="36.0" prefWidth="104.0" style="-fx-background-color: #495CFF; -fx-background-radius: 50;" text="Supprimer" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="193.0" layoutY="71.0" text="Liste des Choix">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="220.0" layoutY="106.0" prefWidth="200.0" />
+      <ImageView fx:id="imgview" fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="choose" layoutX="338.0" layoutY="582.0" onAction="#importerimage" prefHeight="39.0" prefWidth="200.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Choisissez une image" textFill="#faf7f7" visible="false">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="photo" alignment="CENTER" layoutX="157.0" layoutY="564.0" prefHeight="30.0" prefWidth="147.0" promptText="Path de l'image " visible="false" />
+   </children>
+</Pane>

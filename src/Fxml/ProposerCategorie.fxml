@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1250.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProposerCategorieController">
+   <children>
+      <JFXTextField fx:id="propcat" layoutX="463.0" layoutY="315.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-color: #F0F8FF; -fx-prompt-text-fill: gray;" />
+      <Label layoutX="310.0" layoutY="318.0" text="Nom_Catégorie" textFill="#282828">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="retour" layoutX="625.0" layoutY="485.0" onAction="#Retour" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="valider" layoutX="376.0" layoutY="485.0" onAction="#ValiderCategorie" prefHeight="57.0" prefWidth="174.0" styleClass="head-background" stylesheets="@../styles/style.css" text="Valider" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="127.0" layoutY="73.0" text="Proposer Catégorie">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="152.0" layoutY="126.0" prefHeight="0.0" prefWidth="297.0" />
+   </children>
+</Pane>
